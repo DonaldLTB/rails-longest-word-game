@@ -1,0 +1,18 @@
+<h1>Result</h1>
+<p>
+  <% if @end_result == true %>
+    <% if @word["found"] == true %>
+      <%= "Correct"  %>
+    <% else %>
+      <%= "You are wrong" %>
+    <% end %>
+  <% else %>
+    <%= "Not an English word, you racist!" %>
+  <% end %>
+</p>
+<% params[:letters] %>
+
+<p><%= link_to "Play again", new_path %></p>
+<p>
+  <%= @end_time %>
+</p>
